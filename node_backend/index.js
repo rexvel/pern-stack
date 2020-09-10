@@ -3,15 +3,15 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
 const port = 5000
+
 const Pool = require('pg').Pool
 const pool = new Pool({
   host: 'postgres',
   port: 5432,
   user: 'postgres',
   password: '1994',
-  database: 'todo'
+  database: 'testdb'
 })
-
 
 app.use(cors())
 app.use(bodyParser.json())
