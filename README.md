@@ -27,22 +27,6 @@ After building and launching app's image , you need to  create database and tabl
 The above command will connect you to the psql console of the container running Postgres.
 The next set of commands will let us seed the database with some data
 
-```CREATE ROLE <<rolename_set_in_backend>> WITH LOGIN PASSWORD 'your_admin_password';
-CREATE DATABASE testdata WITH OWNER <<rolename_set_in_backend>>;
-\c testdata  <<rolename_set_in_backend>>
-CREATE TABLE todo(
-  todo_id SERIAL PRIMARY KEY,
-  description VARCHAR(255)
-);
-INSERT INTO todo (todo_id, description) VALUES ($1, 'test');```
-
-```
-
-
-If all went well , app should work properly.
-
-
-
 ```CREATE ROLE postgres WITH LOGIN PASSWORD '1994';
 CREATE DATABASE testdb WITH OWNER postgres;
 \c testdb  postgres
@@ -53,3 +37,9 @@ CREATE TABLE todo(
 INSERT INTO todo (todo_id, description) VALUES (99, 'test');```
 
 ```
+
+
+If all went well , app should work properly.
+
+
+
