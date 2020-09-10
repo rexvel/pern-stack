@@ -34,7 +34,7 @@ CREATE TABLE todo(
   todo_id SERIAL PRIMARY KEY,
   description VARCHAR(255)
 );
-INSERT INTO todo (todo_id, description) VALUES (99, 'test');```
+INSERT INTO todo (todo_id, description) VALUES (99, 'test')
 
 ```
 
